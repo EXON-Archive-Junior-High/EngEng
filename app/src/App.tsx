@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 import './css/App.css'
-import Input from './components/Input'
+import Quiz from './components/Quiz'
 
 class App extends Component {
     public render() {
         return (
             <div className="App">
                 <div className="center">
-                    <Input/>
+                    <Quiz />
                 </div>
-
             </div>
         )
     }

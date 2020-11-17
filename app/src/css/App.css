@@ -2,6 +2,7 @@
 
 body {
     background-color: #D8DEE9;
+    color: #2E3440;
 }
 
 .App {
@@ -13,6 +14,14 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 80vh;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+p {
+    font-size: 30px;
 }
 
 input {

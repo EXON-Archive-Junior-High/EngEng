@@ -1,9 +1,17 @@
-import React from "react";
-import { Component } from "react";
+import React, { Component } from "react"
 
-class Input extends Component {
+type quizType = {
+    word: string,
+    IsEng: boolean,
+    answer: string
+}
+
+class Input extends Component<quizType> {
     public click() {
-        alert('click')
+        const inputText = document.querySelector('#input') as HTMLInputElement
+        if (inputText.value === this.props.answer) {
+            alert('맞았습니다')
+        }
     }
 
     public handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -14,7 +22,7 @@ class Input extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit.bind(this)}>
-                    <input></input>
+                    <input id="input"></input>
                     <button onClick={this.click.bind(this)}>제출</button>
                 </form>
             </div>
