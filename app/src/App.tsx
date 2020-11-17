@@ -6,7 +6,10 @@ class App extends Component {
     public render() {
         return (
             <div className="App">
-                <Input/>
+                <div className="center">
+                    <Input/>
+                </div>
+
             </div>
         )
     }

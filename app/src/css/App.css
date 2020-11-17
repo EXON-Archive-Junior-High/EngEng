@@ -3,3 +3,40 @@
 body {
     background-color: #D8DEE9;
 }
+
+.App {
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    background: #ECEFF4;
+    border: none;
+    font-size: 20px;
+    color: #2E3440;
+    padding-left: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background-color: #E5E9F0;
+    border: none;
+    color: #2E3440;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+}
