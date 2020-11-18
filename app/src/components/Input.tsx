@@ -9,8 +9,10 @@ type quizType = {
 class Input extends Component<quizType> {
     public click() {
         const inputText = document.querySelector('#input') as HTMLInputElement
-        if (inputText.value === this.props.answer) {
+        if (inputText.value.toLowerCase() === this.props.answer) {
             alert('맞았습니다')
+        } else {
+            inputText.value = ''
         }
     }
 

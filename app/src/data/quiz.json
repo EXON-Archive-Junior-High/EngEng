@@ -3,5 +3,10 @@
         "word": "Hello",
         "isEng": true,
         "answer": "안녕하세요"
+    },
+    {
+        "word": "안녕하세요",
+        "isEng": false,
+        "answer": "hello"
     }
 ]
