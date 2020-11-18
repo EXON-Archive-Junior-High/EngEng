@@ -16,6 +16,18 @@ body {
     min-height: 80vh;
 }
 
+#result {
+    font-weight: bolder;
+}
+
+.fail {
+    color: #BF616A;
+}
+
+.correct {
+    color: #A3BE8C;
+}
+
 h1 {
     font-size: 80px;
 }
