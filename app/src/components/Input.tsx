@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { reduceEachTrailingCommentRange } from "typescript"
 
 type quizType = {
     word: string,
