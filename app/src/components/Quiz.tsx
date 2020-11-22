@@ -4,20 +4,22 @@ const quiz = require('../data/quiz.json')
 class Quiz extends Component {
     public randQuiz: any
 
+    constructor (props: any) {
+        super(props)
+        this.randQuiz = this.getQuiz()
+    }
+
     public showResult(isCorrect: boolean) {
         const result = document.querySelector('#result')
         if (result) result.innerHTML = isCorrect ? '맞았습니다' : '틀렸습니다'
         result?.classList.remove(isCorrect ? 'fail' : 'correct')
         result?.classList.add(isCorrect ? 'correct' : 'fail')
-        alert(isCorrect ? '맞았습니다' : '틀렸습니다')
     }
 
     public click() {
         const inputText = document.querySelector('#input') as HTMLInputElement
-        if (inputText.value.toLowerCase() === this.randQuiz.answer) this.showResult(true)
+        if (inputText.value === this.randQuiz.answer) this.showResult(true)
         else this.showResult(false)
-        this.setState({})
-        inputText.value = ''
     }
 
     public handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -29,7 +31,7 @@ class Quiz extends Component {
     }
 
     public render() {
-        this.randQuiz = this.getQuiz()
+        
         return (
             <div>
                 <h1>{this.randQuiz.word}</h1>
