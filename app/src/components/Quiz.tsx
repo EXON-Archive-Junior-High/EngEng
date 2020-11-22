@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Star from './Star'
 const quiz = require('../data/quiz.json')
 
 class Quiz extends Component {
@@ -36,6 +37,7 @@ class Quiz extends Component {
             <div>
                 <h1>{this.randQuiz.word}</h1>
                 <p>{this.randQuiz.isEng ? "의 뜻은?" : "의 뜻을 가진 영단어는?"}</p>
+                <Star stars={this.randQuiz.stars}/>
                 <br />
                 <div>
                     <form onSubmit={this.handleSubmit.bind(this)}>
