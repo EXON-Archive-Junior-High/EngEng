@@ -4,10 +4,16 @@ const quiz = require('../data/quiz.json')
 
 class Quiz extends Component {
     public randQuiz: any
+    public quizList!: Array<number>
 
     constructor (props: any) {
         super(props)
         this.randQuiz = this.getQuiz()
+    }
+
+    public next() {
+        this.randQuiz = this.getQuiz()
+        this.setState({})
     }
 
     public showResult(isCorrect: boolean) {
@@ -21,6 +27,8 @@ class Quiz extends Component {
         const inputText = document.querySelector('#input') as HTMLInputElement
         if (inputText.value === this.randQuiz.answer) this.showResult(true)
         else this.showResult(false)
+        inputText.value = ''
+        this.next()
     }
 
     public handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -28,11 +36,14 @@ class Quiz extends Component {
     }
 
     public getQuiz() {
-        return quiz[Math.floor(Math.random() * Math.floor(quiz.length))]
+        let rand: number = Math.floor(Math.random() * Math.floor(quiz.length))
+        if (!this.quizList.includes(rand)) {
+            this.quizList.push(rand)
+            return quiz[rand]
+        }
     }
 
     public render() {
-        
         return (
             <div>
                 <h1>{this.randQuiz.word}</h1>
