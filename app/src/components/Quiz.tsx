@@ -43,7 +43,8 @@ class Quiz extends Component {
             this.quizList.push(rand)
             console.log(rand)
             return quiz[rand]
-        }
+        // eslint-disable-next-line no-restricted-globals
+        } else location.href = './end'
     }
 
     public render() {
