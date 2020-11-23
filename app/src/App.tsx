@@ -14,17 +14,10 @@ class App extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route path="/">
-                        <div className="App center">
-                            <Quiz />
-                        </div>
-                    </Route>
-                    <Route path="/end">
-                        <End />
-                    </Route>
-                    <Route path="/e">
-                        <h1>dfdsaasd</h1>
-                    </Route>
+                    <div className="App center">
+                        <Route exact path="/" component={Quiz} />
+                        <Route path="/end" component={End} />
+                    </div>
                 </Switch>
             </Router>
         )
