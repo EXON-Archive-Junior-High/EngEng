@@ -11,6 +11,11 @@ class Quiz extends Component {
         this.randQuiz = this.getQuiz()
     }
 
+    public addScore(score: number) {
+        console.log(localStorage.getItem('score'))
+        localStorage.setItem('score', (+!localStorage.getItem('score')+ score).toString())
+    }
+
     public next() {
         this.randQuiz = this.getQuiz()
         this.setState({})
@@ -21,6 +26,7 @@ class Quiz extends Component {
         if (result) result.innerHTML = isCorrect ? '맞았습니다' : '틀렸습니다'
         result?.classList.remove(isCorrect ? 'fail' : 'correct')
         result?.classList.add(isCorrect ? 'correct' : 'fail')
+        if (isCorrect) this.addScore(10)
     }
 
     public click() {
