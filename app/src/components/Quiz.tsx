@@ -4,7 +4,7 @@ const quiz = require('../data/quiz.json')
 
 class Quiz extends Component {
     public randQuiz: any
-    public quizList!: Array<number>
+    public quizList: Array<number> = []
 
     constructor (props: any) {
         super(props)
@@ -37,8 +37,11 @@ class Quiz extends Component {
 
     public getQuiz() {
         let rand: number = Math.floor(Math.random() * Math.floor(quiz.length))
-        if (!this.quizList.includes(rand)) {
+        // eslint-disable-next-line no-restricted-globals
+        if (!(this.quizList.length === quiz.length)) {
+            while (this.quizList.includes(rand)) rand = Math.floor(Math.random() * Math.floor(quiz.length))
             this.quizList.push(rand)
+            console.log(rand)
             return quiz[rand]
         }
     }
