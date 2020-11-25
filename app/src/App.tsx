@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './css/App.css'
 import Quiz from './components/Quiz'
+import Start from './components/Start'
 import End from './components/End'
 import {
     BrowserRouter as Router,
@@ -15,7 +16,8 @@ class App extends Component {
             <Router>
                 <Switch>
                     <div className="App center">
-                        <Route exact path="/" component={Quiz} />
+                        <Route exact path="/" component={Start} />
+                        <Route path="/quiz" component={Quiz} />
                         <Route path="/end" component={End} />
                     </div>
                 </Switch>

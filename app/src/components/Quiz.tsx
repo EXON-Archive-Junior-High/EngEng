@@ -12,8 +12,8 @@ class Quiz extends Component {
     }
 
     public addScore(score: number) {
-        console.log(localStorage.getItem('score'))
-        localStorage.setItem('score', (+!localStorage.getItem('score')+ score).toString())
+        const item: number = Number(localStorage.getItem('score'))
+        localStorage.setItem('score', (item + score).toString())
     }
 
     public next() {
