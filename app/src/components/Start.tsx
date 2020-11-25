@@ -9,6 +9,7 @@ class Start extends Component {
     public render() {
         return (
             <div>
+                <h1>영어 시험</h1> <br />
                 {/* eslint-disable-next-line no-restricted-globals */}
                 <button onClick={() => location.href = '../quiz'}>시작하기</button>
             </div>
