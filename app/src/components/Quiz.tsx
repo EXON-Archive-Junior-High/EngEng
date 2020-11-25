@@ -31,7 +31,7 @@ class Quiz extends Component {
 
     public click() {
         const inputText = document.querySelector('#input') as HTMLInputElement
-        if (inputText.value === this.randQuiz.answer) this.showResult(true)
+        if (this.randQuiz.answer.includes(inputText.value.toLowerCase())) this.showResult(true)
         else this.showResult(false)
         inputText.value = ''
         this.next()

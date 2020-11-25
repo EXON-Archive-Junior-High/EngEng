@@ -2,13 +2,13 @@
     {
         "word": "Hello",
         "isEng": true,
-        "answer": "안녕하세요",
+        "answer": ["안녕하세요", "안녕", "ㅎㅇ"],
         "stars": 1
     },
     {
         "word": "안녕하세요",
         "isEng": false,
-        "answer": "hello",
+        "answer": ["hello"],
         "stars": 1
     }
 ]
