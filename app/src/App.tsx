@@ -6,13 +6,14 @@ import End from './components/End'
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+    HashRouter
 } from "react-router-dom";
 
 class App extends Component {
     public render() {
         return (
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <div className="App center">
                         <Route exact path="/" component={Start} />
@@ -21,6 +22,12 @@ class App extends Component {
                     </div>
                 </Switch>
             </Router>
+            // <div className="App center">
+            //     <HashRouter key="quiz" basename="quiz">
+            //         <Quiz/>
+            //     </HashRouter>
+            // </div>
+            
         )
     }
 }

@@ -34,7 +34,7 @@ class Quiz extends Component {
         if (this.randQuiz.answer.includes(inputText.value.toLowerCase())) this.showResult(true)
         else this.showResult(false)
         inputText.value = ''
-        this.next()
+        setTimeout(() => this.next(), 500)
     }
 
     public handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -62,7 +62,7 @@ class Quiz extends Component {
                 <br />
                 <div>
                     <form onSubmit={this.handleSubmit.bind(this)}>
-                        <input id="input"></input>
+                        <input autoComplete="off" id="input"></input>
                         <button onClick={this.click.bind(this)}>제출</button>
                     </form>
                     <br />
