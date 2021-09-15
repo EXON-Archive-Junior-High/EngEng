@@ -7,20 +7,19 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    HashRouter
+    HashRouter,
+    Redirect
 } from "react-router-dom";
 
 class App extends Component {
     public render() {
         return (
             <Router basename={process.env.PUBLIC_URL}>
-                <Switch>
-                    <div className="App center">
-                        <Route exact path="/" component={Start} />
-                        <Route path="/quiz" component={Quiz} />
-                        <Route path="/end" component={End} />
-                    </div>
-                </Switch>
+                <div className="App center">
+                    <Route exact path="/" component={Start} />
+                    <Route path="/EngEng/quiz" component={Quiz} />
+                    <Route path="/EngEng/end" component={End} />
+                </div>
             </Router>
             // <div className="App center">
             //     <HashRouter key="quiz" basename="quiz">
