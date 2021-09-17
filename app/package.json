@@ -48,5 +48,5 @@
     "@types/react": "^16.9.56",
     "@types/react-router-dom": "^5.1.6"
   },
-  "homepage": "https://1-exon.github.io/EngEng"
+  "homepage": "."
 }

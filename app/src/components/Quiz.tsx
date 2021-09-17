@@ -31,7 +31,7 @@ class Quiz extends Component {
 
     public click() {
         const inputText = document.querySelector('#input') as HTMLInputElement
-        if (this.randQuiz.answer.includes(inputText.value.toLowerCase())) this.showResult(true)
+        if (this.randQuiz.answer === inputText.value.toLowerCase()) this.showResult(true)
         else this.showResult(false)
         inputText.value = ''
         setTimeout(() => this.next(), 500)
@@ -57,7 +57,7 @@ class Quiz extends Component {
         return (
             <div>
                 <h1>{this.randQuiz.word}</h1>
-                <p>{this.randQuiz.isEng ? "의 뜻은?" : "의 뜻을 가진 영단어는?"}</p>
+                <p>안에 들어갈 단어는?</p>
                 <Star stars={this.randQuiz.stars}/>
                 <br />
                 <div>

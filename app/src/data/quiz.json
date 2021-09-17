@@ -1,14 +1,227 @@
 [
     {
-        "word": "Hello",
-        "isEng": true,
-        "answer": ["안녕하세요", "안녕", "ㅎㅇ"],
+        "word": "If any problems ______ , let me know.\n어떤 문제가 발생하면, 저에게 알려주세요.",
+        "answer": "arise",
         "stars": 1
     },
     {
-        "word": "안녕하세요",
-        "isEng": false,
-        "answer": ["hello"],
+        "word": "Something unexpected ______  in class.\n예기치 못한 일이 수업 중에 일어났다.",
+        "answer": "occurred",
+        "stars": 1
+    },
+    {
+        "word": "This medicine ______  no danger to patients.\n이 약은 환자들에게 어떠한 위험도 제기하지 않는다. ",
+        "answer": "pose",
+        "stars": 1
+    },
+    {
+        "word": "They ______  for the group photo.\n그들은 단체 사진을 찍으려고 포즈를 취했다.",
+        "answer": "posed",
+        "stars": 1
+    },
+    {
+        "word": "There is a ______  between him and his brother.\n그와 형 사이에 갈등이 있다.",
+        "answer": "conflict",
+        "stars": 1
+    },
+    {
+        "word": "She often comes into ______  with her husband. \n그녀와 그녀의 남편과 자주 충돌을 일으킨다.",
+        "answer": "conflict",
+        "stars": 1
+    },
+    {
+        "word": "The ______  size pizza is $5.\n1인용 피자는 5달러입니다.",
+        "answer": "Individuals",
+        "stars": 1
+    },
+    {
+        "word": " ______ are affected by their community.\n개인은 자신이 속한 지역 사회의 영향을 받는다.",
+        "answer": "individual",
+        "stars": 1
+    },
+    {
+        "word": " ______ hurts families’ minds and bodies.\n가난 때문에 가족의 마음과 몸이 상처를 입는다.",
+        "answer": "Poverty",
+        "stars": 1
+    },
+    {
+        "word": "The dog got through a ______  in the fence.\n그 개는 울타리에 난 구멍을 통과했다.",
+        "answer": "gap",
+        "stars": 1
+    },
+    {
+        "word": "There’s a big ______  between the rich and poor. \n빈부의 격차가 크다.",
+        "answer": "gap",
+        "stars": 1
+    },
+    {
+        "word": "The TV producer has lots of ______ .\n그 TV 프로듀서는 영향력이 크다.",
+        "answer": "influence",
+        "stars": 1
+    },
+    {
+        "word": "The art of Paul Cézanne ______  Picasso a lot.\n폴 세잔의 회화가 피카소에게 커다란 영향을 끼쳤다.",
+        "answer": "influenced",
+        "stars": 1
+    },
+    {
+        "word": "Bullying is a ______  problem in schools.\n괴롭힘은 학교에서 중요한 문제이다.",
+        "answer": "significant",
+        "stars": 1
+    },
+    {
+        "word": "Weather ______  made us come down the mountain early.\n날씨 상황 때문에 우리는 산에서 빨리 내려왔다.",
+        "answer": "circumstances",
+        "stars": 1
+    },
+    {
+        "word": "Their ______  changed a lot after he lost his job.\n그들의 형편은 그가 실직한 후에 많이 변했다.",
+        "answer": "circumstances",
+        "stars": 1
+    },
+    {
+        "word": "Mary really ______  the award.\n메리는 정말로 그 상을 받을 자격이 있다.",
+        "answer": "deserves",
+        "stars": 1
+    },
+    {
+        "word": "Aesop wrote many ______  stories.\n이솝은 여러 교훈적인 이야기를 썼다.",
+        "answer": "moral",
+        "stars": 1
+    },
+    {
+        "word": "The issue ______  your attention.\n그 사안은 여러분의 관심을 필요로 합니다.",
+        "answer": "requires",
+        "stars": 1
+    },
+    {
+        "word": "The law ______  us to get some training.\n그 법은 우리가 훈련을 받을 것을 요구한다.",
+        "answer": "requires",
+        "stars": 1
+    },
+    {
+        "word": "You can ______  money to the poor.\n너는 불우이웃에게 돈을 기부할 수 있다.",
+        "answer": "contribute",
+        "stars": 1
+    },
+    {
+        "word": "She ______  to winning the game.\n그녀는 경기에 이기는 데 기여했다.",
+        "answer": "contributed",
+        "stars": 1
+    },
+    {
+        "word": "We donated our old books to ______ .\n우리는 오래된 책을 자선 단체에 기부했다.",
+        "answer": "charity",
+        "stars": 1
+    },
+    {
+        "word": "I meet her regularly at ______  events.\n나는 그녀를 자선 행사에서 정기적으로 만난다.",
+        "answer": "charity",
+        "stars": 1
+    },
+    {
+        "word": "Students ______  the club in 2018.\n학생들은 2018년에 그 동아리를 설립했다.",
+        "answer": "established",
+        "stars": 1
+    },
+    {
+        "word": "The police help to ______  law and order. \n경찰이 법과 질서를 확립하는 데 도움을 준다.",
+        "answer": "establish",
+        "stars": 1
+    },
+    {
+        "word": "Some tourist spots give ______  with a student card.\n몇몇 관광지는 학생증이 있으면 혜택을 준다.",
+        "answer": "benefits",
+        "stars": 1
+    },
+    {
+        "word": "It’s painful, but you have to face ______ .\n고통스럽지만 당신은 현실을 받아들여야 한다.",
+        "answer": "reality",
+        "stars": 1
+    },
+    {
+        "word": "Seconds are ______  of time.\n초는 시간의 단위이다.",
+        "answer": "units",
+        "stars": 1
+    },
+    {
+        "word": "Last month they sold 1,000 ______  of that model of car.\n지난달에 그들은 그 모델의 차를 천 대 팔았다.",
+        "answer": "units",
+        "stars": 1
+    },
+    {
+        "word": "The meter is an international ______ .\n미터는 국제 표준이다.",
+        "answer": "standard",
+        "stars": 1
+    },
+    {
+        "word": "All hand-baggage was X-rayed. This is now ______  practice.\n모든 손가방은 엑스레이 검사를 한다. 이것은 일반적인 관례이다.",
+        "answer": "standard",
+        "stars": 1
+    },
+    {
+        "word": "Spring ______  to be warmer now.\n요즘 봄이 더 따뜻해지는 경향이 있다.",
+        "answer": "tends",
+        "stars": 1
+    },
+    {
+        "word": "Watching too much TV is ______  to obesity.\nTV를 너무 많이 보는 건 비만과 관련 있다.",
+        "answer": "related",
+        "stars": 1
+    },
+    {
+        "word": "Some people do not have ______  cinema etiquette. \n어떤 사람들은 적절한 극장 예절을 지키지 않는다.",
+        "answer": "proper",
+        "stars": 1
+    },
+    {
+        "word": "We won’t forget all your ______ .\n우리는 당신의 노고를 잊지 않을 것입니다.",
+        "answer": "labor",
+        "stars": 1
+    },
+    {
+        "word": "We ______  all day to find a solution.\n우리는 해결책을 찾기 위해 하루 종일 애썼다.",
+        "answer": "labored",
+        "stars": 1
+    },
+    {
+        "word": "George is ______   a job.\n조지는 일자리를 찾고 있다.",
+        "answer": "seeking",
+        "stars": 1
+    },
+    {
+        "word": "We all ______ our life’s meaning.\n우리는 모두 삶의 의미를 추구한다.",
+        "answer": "seek",
+        "stars": 1
+    },
+    {
+        "word": "",
+        "answer": "",
+        "stars": 1
+    },
+    {
+        "word": "",
+        "answer": "",
+        "stars": 1
+    },
+    {
+        "word": "",
+        "answer": "",
+        "stars": 1
+    },
+    {
+        "word": "",
+        "answer": "",
+        "stars": 1
+    },
+    {
+        "word": "",
+        "answer": "",
+        "stars": 1
+    },
+    {
+        "word": "",
+        "answer": "",
         "stars": 1
     }
 ]

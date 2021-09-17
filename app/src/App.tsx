@@ -20,8 +20,8 @@ class App extends Component {
                         <Route exact path="/" component={Start} />
                         {/* <Route path={`${match.url}/Quiz`} component={Quiz} />
                         <Route path={`${match.url}/End`} component={End} /> */}
-                        <Route path="/EngEng/Quiz" component={Quiz} />
-                        <Route path="/EngEng/End" component={End} />
+                        <Route path="/Quiz" component={Quiz} />
+                        <Route path="/End" component={End} />
                     </div>
                 </Switch>
             </Router>
