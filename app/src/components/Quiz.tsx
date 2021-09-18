@@ -5,6 +5,7 @@ const quiz = require('../data/quiz.json')
 class Quiz extends Component {
     public randQuiz: any
     public quizList: Array<number> = []
+    public unit: string = 'unit21'
 
     constructor (props: any) {
         super(props)
@@ -34,7 +35,7 @@ class Quiz extends Component {
         if (this.randQuiz.answer === inputText.value.toLowerCase()) this.showResult(true)
         else this.showResult(false)
         inputText.value = ''
-        setTimeout(() => this.next(), 500)
+        this.next()
     }
 
     public handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -42,13 +43,13 @@ class Quiz extends Component {
     }
 
     public getQuiz() {
-        let rand: number = Math.floor(Math.random() * Math.floor(quiz.length))
+        let rand: number = Math.floor(Math.random() * Math.floor(quiz[this.unit].length))
         // eslint-disable-next-line no-restricted-globals
-        if (!(this.quizList.length === quiz.length)) {
-            while (this.quizList.includes(rand)) rand = Math.floor(Math.random() * Math.floor(quiz.length))
+        if (!(this.quizList.length === quiz[this.unit].length)) {
+            while (this.quizList.includes(rand)) rand = Math.floor(Math.random() * Math.floor(quiz[this.unit].length))
             this.quizList.push(rand)
             console.log(rand)
-            return quiz[rand]
+            return quiz[this.unit][rand]
         // eslint-disable-next-line no-restricted-globals
         } else location.href = './end'
     }
@@ -56,7 +57,7 @@ class Quiz extends Component {
     public render() {
         return (
             <div>
-                <h1>{this.randQuiz.word}</h1>
+                <h2>{this.randQuiz.problem}</h2>
                 <p>안에 들어갈 단어는?</p>
                 <Star stars={this.randQuiz.stars}/>
                 <br />

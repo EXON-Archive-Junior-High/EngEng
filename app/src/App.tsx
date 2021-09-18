@@ -11,15 +11,11 @@ import {
 
 class App extends Component {
     public render() {
-        // const { match }: any = this.props
-        // console.log(match)
         return (
             <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <div className="App center">
                         <Route exact path="/" component={Start} />
-                        {/* <Route path={`${match.url}/Quiz`} component={Quiz} />
-                        <Route path={`${match.url}/End`} component={End} /> */}
                         <Route path="/Quiz" component={Quiz} />
                         <Route path="/End" component={End} />
                     </div>
